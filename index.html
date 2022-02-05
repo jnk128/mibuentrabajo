@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+	<style>
+		li{
+			font-size: 13px;
+		}
+		.jmain li{
+			font-size: 16px;
+			padding: 0 8px;
+		}
+		.jfont13{
+			font-size: 13px;
+		}
+		.jsocial{
+			color: #777;
+			padding:0 8px;
+		}
+		.jbtncat{
+			background-color: #fa0;
+			color: #000;
+			padding: 10px;
+			box-shadow: none;
+ 			border-radius: 0px;
+ 			border:none;
+		}
+		.jbtncat:hover{
+			background-color: #111;
+			color: #eee;
+		}
+		.jbtnneg{
+			background-color: #222;
+			color: #fff;
+			padding: 10px;
+			box-shadow: none;
+ 			border-radius: 0px;
+ 			border:none;
+		}
+		.jbtnneg:hover{
+			background-color: #eee;
+			color: #111;
+		}
+		.jw100cen{
+		  align-items: center;
+		  display: flex;
+		  justify-content: center;
+		  width: 100vw;
+		}
+		.jwcen{
+		  align-items: center;
+		  display: flex;
+		  justify-content: center;
+		}
+		.jcen{
+		  text-align: center;
+		}
+		.jfff{
+		  color: #fff;
+		}
+		.jflex{
+			display: flex;
+			margin: 0px auto;
+		}
+		.jice{
+			width: 100px;
+		}
+		.divima{
+		  background-repeat: no-repeat;
+    	background-size: cover;
+		}
+		.divcircle{
+			border-radius: 50%;
+			background-color: #222;
+			color: #fff;
+			height: 100px;
+			width: 100px;
+		}
+		.jicon{
+			margin-top: 30%;
+		}
+	</style>
+</head>
+<body>
+	<!----------------------------------------------------------------------------------------->
+	<nav class="navbar navbar-expand-lg navbar-light bg-light" style="height:40px">
+	  <div class="container-fluid" style="background-color:#eee">
+	    <a class="navbar-brand" href="#">
+	    	<img src="">
+	    </a>
+	    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+	        <li class="nav-item dropdown">
+	          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+							  <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+							</svg>
+	            Teléfono fijo
+	          </a>
+	          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+	            <li><a class="dropdown-item" href="#">Action</a></li>
+	            <li><a class="dropdown-item" href="#">Another action</a></li>
+	          </ul>
+	        </li>
+
+	        <li class="nav-item dropdown">
+	          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+							  <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
+							</svg>
+	            Whatsapp
+	          </a>
+	          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+	            <li><a class="dropdown-item" href="#">Action</a></li>
+	            <li><a class="dropdown-item" href="#">Another action</a></li>
+	          </ul>
+	        </li>
+
+	        <li class="nav-item dropdown">
+	          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+							  <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+							</svg>
+	            Correo electrónico
+	          </a>
+	          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+	            <li><a class="dropdown-item" href="#">Action</a></li>
+	            <li><a class="dropdown-item" href="#">Another action</a></li>
+	          </ul>
+	        </li>
+
+	        <li class="nav-item">
+	          <a class="nav-link" href="#">
+	          	<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+							  <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+							  <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/>
+							</svg>
+	          	Lun – Dom. 8.00 – 20.00
+	          </a>
+	        </li>
+
+	        <li class="nav-item">
+	          <a class="nav-link" href="#">
+							<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+							  <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/>
+							</svg>
+	          	¿Cómo trabajamos?
+	          	<span style="background-color:#fa0; font-size:10px; padding:2px 6px">VER</span>
+	          </a>
+	        </li>
+	      </ul>
+	      <div class="d-flex">
+					<a href="#" class="jsocial">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+						  <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+						</svg>
+					</a>
+					<a href="#" class="jsocial">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+							<path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+						</svg>
+					</a>
+					<a href="#" class="jsocial">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+						  <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/>
+						</svg>
+					</a>
+					<a href="#" class="jsocial">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+						  <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+						</svg>
+					</a>
+	      </div>
+	    </div>
+	  </div>
+	</nav>
+	<!----------------------------------------------------------------------------------------->
+	<nav class="navbar navbar-expand-lg navbar-light bg-light jmain">
+		<div class="jw100cen">
+	  <div class="jflex" style="background-color: #fff">
+	    <a class="navbar-brand" href="#">
+	    	<img src="https://scontent.faqp3-1.fna.fbcdn.net/v/t1.6435-9/87497828_532592567392504_9176838432729595904_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeEXG572IEDAihBftxeRMsBuEg-QMg0J5ewSD5AyDQnl7J7UajZ7-lQlaKWqj7wcAczRVYyboUcYTB8a1R5HuTyn&_nc_ohc=zv3H9WgszsYAX8_Sw5d&_nc_ht=scontent.faqp3-1.fna&oh=00_AT-wo-rV-_9-QcHXIwxmsAWujALer1NUFH-J2Nbq0itX0w&oe=620CEC33" alt="logo" height="50px">
+	    </a>
+	    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	      <span class="navbar-toggler-icon"></span>
+	    </button>
+	    <div class="jice">
+	    	
+	    </div>
+	    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+	        <li class="nav-item dropdown">
+	          <a class="nav-link active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+	            TARIFAS
+	          </a>
+	          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+	            <li><a class="dropdown-item" href="#">PROMOCIONES</a></li>
+	          </ul>
+	        </li>
+
+	        <li class="nav-item dropdown">
+	          <a class="nav-link active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+	            TIPOS DE TRABAJO
+	          </a>
+	          <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="min-width: 450px;">
+	            <div class="row">
+		            <div class="col">
+			            <li><a class="dropdown-item" href="#">TFG Publicación en revista</a></li>
+			            <li><a class="dropdown-item" href="#">TFM</a></li>
+			            <li><a class="dropdown-item" href="#">TFE</a></li>
+			            <li><a class="dropdown-item" href="#">PEC</a></li>
+			            <li><a class="dropdown-item" href="#">Proyecto de Empresa</a></li>
+			            <li><a class="dropdown-item" href="#">Proyecto de Curso</a></li>
+			            <li><a class="dropdown-item" href="#">Traducción</a></li>
+			            <li><a class="dropdown-item" href="#">Publicación en revista</a></li>
+			            <li><a class="dropdown-item" href="#">Tareas y ejercicios</a></li>
+			            <li><a class="dropdown-item" href="#">RESEÑA ACADÉMICA</a></li>
+			            <li><a class="dropdown-item" href="#">PRÁCTICAS UNIVERSITARIAS</a></li>
+			            <li><a class="dropdown-item" href="#">ACTIVIDAD ACADÉMICA</a></li>
+
+		            </div>
+		            <div class="col">
+			            <li><a class="dropdown-item" href="#">REDACCIÓN DE TEXTOS</a></li>
+			            <li><a class="dropdown-item" href="#">CORRECCIÓN DE TEXTOS</a></li>
+			            <li><a class="dropdown-item" href="#">PROYECTO FIN DE CICLO (FP)</a></li>
+			            <li><a class="dropdown-item" href="#">RESUMEN</a></li>
+			            <li><a class="dropdown-item" href="#">TESIS DOCTORAL</a></li>
+			            <li><a class="dropdown-item" href="#">PRESENTACIÓN</a></li>
+			            <li><a class="dropdown-item" href="#">EXÁMENES ONLINE</a></li>
+			            <li><a class="dropdown-item" href="#">INVESTIGACIÓN</a></li>
+			            <li><a class="dropdown-item" href="#">ENSAYO</a></li>
+			            <li><a class="dropdown-item" href="#">MONOGRAFÍA</a></li>
+			            <li><a class="dropdown-item" href="#">DETECTOR DE PLAGIO</a></li>
+		            </div>
+	            </div>
+	          </ul>
+	        </li>
+
+	        <li class="nav-item dropdown">
+	          <a class="nav-link active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+	            ESPECIALIDADES
+	          </a>
+	          <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="min-width: 300px;">
+	            <div class="row">
+		            <div class="col">
+			            <li><a class="dropdown-item" href="#">ADE</a></li>
+			            <li><a class="dropdown-item" href="#">BIOLOGÍA</a></li>
+			            <li><a class="dropdown-item" href="#">ECONOMÍA</a></li>
+			            <li><a class="dropdown-item" href="#">ENFERMERÍA</a></li>
+			            <li><a class="dropdown-item" href="#">FÍSICA</a></li>
+			            <li><a class="dropdown-item" href="#">MEDICINA</a></li>
+		            </div>
+		            <div class="col">
+			            <li><a class="dropdown-item" href="#">BELLAS ARTES</a></li>
+			            <li><a class="dropdown-item" href="#">DERECHO</a></li>
+			            <li><a class="dropdown-item" href="#">EDUCACIÓN INFANTIL</a></li>
+			            <li><a class="dropdown-item" href="#">ESTADÍSITICA</a></li>
+			            <li><a class="dropdown-item" href="#">INGENIERÍA</a></li>
+			            <li><a class="dropdown-item" href="#">PSICOLOGÍA</a></li>
+		            </div>
+	            </div>
+	          </ul>
+	        </li>
+
+	        <li class="nav-item dropdown">
+	          <a class="nav-link active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+	            EMPRESA
+	          </a>
+	          <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="min-width: 200px;">
+	            <li><a class="dropdown-item" href="#">MÉTODOS DE PAGO Y GARANTÍA</a></li>
+	            <li><a class="dropdown-item" href="#">NUESTRO EQUIPO</a></li>
+	            <li><a class="dropdown-item" href="#">CONTACTO</a></li>
+	            <li><a class="dropdown-item" href="#">COMENTARIOS</a></li>
+	            <li><a class="dropdown-item" href="#">BLOG</a></li>
+	            <li><a class="dropdown-item" href="#">TRABAJAR CON NOSOTROS</a></li>
+	          </ul>
+	        </li>
+
+	        <li class="nav-item jbtncat">
+	        	<a class="nav-link active" href="#"><span style="color:#777">REALIZAR UN PEDIDO</span></a>
+	        </li>
+
+	      </ul>
+
+	    </div>
+	  </div>
+		</div>
+	</nav>
+	<!----------------------------------------------------------------------------------------->
+	<div class="divima jcen" style="background-image: url('https://image.freepik.com/free-photo/flat-lay-desktop-with-agendas-keyboard_23-2148397832.jpg')">
+		<h2 class="jcen jfff pt-3">
+			<b>TE AYUDAMOS CON TUS TRABAJOS UNIVERSITARIOS O ACADÉMICOS</b>
+		</h2>
+		<p class="jcen" style="font-size: 24px; color:#fa0">¿Necesitas relajarte? ¡Aquí puedes encargar trabajos universitarios hechos por expertos!</p>
+		<p class="jcen" style="font-size: 24px; color:#fff">✍️ Correcciones gratuitas 👉 Pago por etapas 👉 Más de 500 expertos 👉 Desde 3 € por página</p>
+		
+		<div class="mb-3">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/EdLOwp1ev9Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+
+		<button class="mb-3 jbtncat">¡HAZ TU PEDIDO AHORA MISMO!</button>
+
+	</div>
+	<!----------------------------------------------------------------------------------------->
+	<div style="min-height:50">.</div>
+	<p class="jcen" style="font-size: 32px; margin-bottom: 0;">Nuestros servicios: Hacemos trabajos académicos</p>
+	<p class="jcen" style="color: #fa0;font-size: 16px;"><b>_____________________________</b></p>
+	<p class="jcen" style="font-size: 16px; margin-bottom: 50px;">Hacemos por ti todo tipo de trabajo o examen académico de cualquier área de conocimiento</p>
+	
+	<div class="jwcen">
+		<div style="width:90vw">
+			
+			<div class="row mb-4">
+				<div class="col">
+					<div class="jwcen">
+					<div class="divcircle jcen">
+						<h1 class="fas fa-book-open jicon" ></h1>
+					</div>
+					</div>
+					<p class="jcen" style="font-size: 24px;">Trabajo de fin de grado (TFG)</p>
+					<p  style="font-size: 16x;"><i class="fas fa-check" style="padding-right: 12px;"></i>Plazo mínimo: 7-8 días</p>
+					<p  style="font-size: 16x;"><i class="fas fa-check" style="padding-right: 12px;"></i>Precio: desde 8 EUR por página</p>
+				</div>
+
+				<div class="col">
+					<div class="jwcen">
+					<div class="divcircle jcen">
+						<h1 class="fas fa-clipboard-check jicon" ></h1>
+					</div>
+					</div>
+					<p class="jcen" style="font-size: 24px;">Trabajo de fin de master (TFM)</p>
+					<p  style="font-size: 16x;"><i class="fas fa-check" style="padding-right: 12px;"></i>Plazo mínimo: 7-8 días</p>
+					<p  style="font-size: 16x;"><i class="fas fa-check" style="padding-right: 12px;"></i>Precio: desde 8 EUR por página</p>
+				</div>
+
+				<div class="col">
+					<div class="jwcen">
+					<div class="divcircle jcen">
+						<h1 class="fas fa-eye jicon" ></h1>
+					</div>
+					</div>
+					<p class="jcen" style="font-size: 24px;">Redacción de textos (resúmenes)</p>
+					<p  style="font-size: 16x;"><i class="fas fa-check" style="padding-right: 12px;"></i>Plazo mínimo: 7-8 días</p>
+					<p  style="font-size: 16x;"><i class="fas fa-check" style="padding-right: 12px;"></i>Precio: desde 8 EUR por página</p>
+				</div>
+			</div>
+
+			<div class="row mb-4">
+				<div class="col">
+					<div class="jwcen">
+					<div class="divcircle jcen">
+						<h1 class="fas fa-chalkboard-teacher jicon" ></h1>
+					</div>
+					</div>
+					<p class="jcen" style="font-size: 24px;">Tesis doctoral</p>
+					<p  style="font-size: 16x;"><i class="fas fa-check" style="padding-right: 12px;"></i>Plazo mínimo: 7-8 días</p>
+					<p  style="font-size: 16x;"><i class="fas fa-check" style="padding-right: 12px;"></i>Precio: desde 8 EUR por página</p>
+				</div>
+
+				<div class="col">
+					<div class="jwcen">
+					<div class="divcircle jcen">
+						<h1 class="fas fa-file-powerpoint fa-plug jicon" ></h1>
+					</div>
+					</div>
+					<p class="jcen" style="font-size: 24px;">Presentación</p>
+					<p  style="font-size: 16x;"><i class="fas fa-check" style="padding-right: 12px;"></i>Plazo mínimo: 7-8 días</p>
+					<p  style="font-size: 16x;"><i class="fas fa-check" style="padding-right: 12px;"></i>Precio: desde 8 EUR por página</p>
+				</div>
+
+				<div class="col">
+					<div class="jwcen">
+					<div class="divcircle jcen">
+						<h1 class="fas fa-book-open jicon" ></h1>
+					</div>
+					</div>
+					<p class="jcen" style="font-size: 24px;">Examen online</p>
+					<p  style="font-size: 16x;"><i class="fas fa-check" style="padding-right: 12px;"></i>Plazo mínimo: 7-8 días</p>
+					<p  style="font-size: 16x;"><i class="fas fa-check" style="padding-right: 12px;"></i>Precio: desde 8 EUR por página</p>
+				</div>
+			</div>
+
+			<div class="row mb-4">
+				<div class="col">
+					<div class="jwcen">
+					<div class="divcircle jcen">
+						<h1 class="fas fa-file-invoice-dollar jicon" ></h1>
+					</div>
+					</div>
+					<p class="jcen" style="font-size: 24px;">Proyecto de empresa</p>
+					<p  style="font-size: 16x;"><i class="fas fa-check" style="padding-right: 12px;"></i>Plazo mínimo: 7-8 días</p>
+					<p  style="font-size: 16x;"><i class="fas fa-check" style="padding-right: 12px;"></i>Precio: desde 8 EUR por página</p>
+				</div>
+
+				<div class="col">
+					<div class="jwcen">
+					<div class="divcircle jcen">
+						<h1 class="fas fa-address-card jicon" ></h1>
+					</div>
+					</div>
+					<p class="jcen" style="font-size: 24px;">Resumen</p>
+					<p  style="font-size: 16x;"><i class="fas fa-check" style="padding-right: 12px;"></i>Plazo mínimo: 7-8 días</p>
+					<p  style="font-size: 16x;"><i class="fas fa-check" style="padding-right: 12px;"></i>Precio: desde 8 EUR por página</p>
+				</div>
+
+				<div class="col">
+					<div class="jwcen">
+					<div class="divcircle jcen">
+						<h1 class="fas fa-search jicon" ></h1>
+					</div>
+					</div>
+					<p class="jcen" style="font-size: 24px;">Investigación</p>
+					<p  style="font-size: 16x;"><i class="fas fa-check" style="padding-right: 12px;"></i>Plazo mínimo: 7-8 días</p>
+					<p  style="font-size: 16x;"><i class="fas fa-check" style="padding-right: 12px;"></i>Precio: desde 8 EUR por página</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="jcen">
+		<button class="mb-3 jbtnneg">TODOS LOS TIPOS Y TARIFAS DE TRABAJO</button>
+	</div>
+	<!----------------------------------------------------------------------------------------->
+	<div class="divima jcen" style="background-image: url('https://images.unsplash.com/photo-1505682634904-d7c8d95cdc50?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dmludGFnZSUyMHR5cGV3cml0ZXJ8ZW58MHx8MHx8&w=1000&q=80')">
+		<p class="jcen pt-4" style="font-size: 36px; color: #fff">Estadísticas de nuestro servicio</p>
+
+		<div class="jwcen">
+			<div style="width:90vw">
+				
+				<div class="row mb-4">
+					<div class="col">
+						<div class="jwcen">
+							<h1 style="color: #fd4; font-size: 64px;" class="fas fa-user-edit jicon" ></h1>
+						</div>
+						<p class="jcen" style="font-size: 64px; color: #fd4">772</p>
+						<p style="font-size: 16px; color: #fff;">Opiniones</p>
+					</div>
+
+					<div class="col">
+						<div class="jwcen">
+							<h1 style="color: #fd4; font-size: 64px;" class="fas fa-check jicon" ></h1>
+						</div>
+						<p class="jcen" style="font-size: 64px; color: #fd4">772</p>
+						<p style="font-size: 16px; color: #fff;">Clientes satisfechos</p>
+					</div>
+
+					<div class="col">
+						<div class="jwcen">
+							<h1 style="color: #fd4; font-size: 64px;" class="fas fa-file-import jicon" ></h1>
+						</div>
+						<p class="jcen" style="font-size: 64px; color: #fd4">772</p>
+						<p style="font-size: 16px; color: #fff;">Pedidos</p>
+					</div>
+
+					<div class="col">
+						<div class="jwcen">
+							<h1 style="color: #fd4; font-size: 64px;" class="fas fa-star jicon" ></h1>
+						</div>
+						<p class="jcen" style="font-size: 64px; color: #fd4">772</p>
+						<p style="font-size: 16px; color: #fff;">Valoración media</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!----------------------------------------------------------------------------------------->
+	<div style="min-height:50">.</div>
+	<p class="jcen" style="font-size: 32px; margin-bottom: 0;">¿Cómo funciona?</p>
+	<p class="jcen" style="color: #fa0;font-size: 16px;"><b>_____________________________</b></p>
+	<div class="jwcen">
+		<div style="width:90vw">
+			
+			<div class="row mb-4">
+				<div class="col">
+					<div class="jwcen">
+						<div class="divcircle jcen">
+							<h1 class="fas fa-clipboard-list jicon" ></h1>
+						</div>
+					</div>
+					<p class="jcen" style="font-size: 16px;">Paso 1</p>
+					<p class="jcen" style="font-size: 16px;">Rellena el formulario para pedir un presupuesto</p>
+				</div>
+
+				<div class="col">
+					<div class="jwcen">
+						<div class="divcircle jcen">
+							<h1 class="fas fa-dollar-sign jicon" ></h1>
+						</div>
+					</div>
+					<p class="jcen" style="font-size: 16px;">Paso 2</p>
+					<p class="jcen" style="font-size: 16px;">Te informamos del presupuesto y proceso de elaboración</p>
+				</div>
+
+				<div class="col">
+					<div class="jwcen">
+						<div class="divcircle jcen">
+							<h1 class="fas fa-handshake jicon" ></h1>
+						</div>
+					</div>
+					<p class="jcen" style="font-size: 16px;">Paso 3</p>
+					<p class="jcen" style="font-size: 16px;">Haces el primer abono y comenzamos el trabajo</p>
+				</div>
+
+				<div class="col">
+					<div class="jwcen">
+						<div class="divcircle jcen">
+							<h1 class="fas fa-paper-plane jicon" ></h1>
+						</div>
+					</div>
+					<p class="jcen" style="font-size: 16px;">Paso 4</p>
+					<p class="jcen" style="font-size: 16px;">Nos pagas la cantidad pendiente del precio total y te entregamos el trabajo final.</p>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<!----------------------------------------------------------------------------------------->
+	<div class="jcen" style="background-color:#fd4">
+		<p class="jcen" style="font-size: 32px; padding-top:45px;">PIDE UN PRESUPUESTO PARA TUS TRABAJOS DE UNIVERSIDAD</p>
+		<button class="mb-3 jbtnneg">¡PEDIR PRESUPUESTO!</button>
+	</div>
+	<!----------------------------------------------------------------------------------------->
+	<div style="min-height:50">.</div>
+	<p class="jcen" style="font-size: 32px; margin-bottom: 0;">¿Por qué elegirnos para hacer tus trabajos?</p>
+	<p class="jcen" style="color: #fa0;font-size: 16px;"><b>_____________________________</b></p>
+
+	<div class="jwcen">
+		<div style="width:90vw">
+			
+			<div class="row mb-4">
+				<div class="col">
+					<div class="jwcen">
+						<div class="divcircle jcen" style="background-color: #5aa">
+							<h1 class="fas fa-crown jicon"></h1>
+						</div>
+					</div>
+					<p class="jcen" style="font-size: 16px;">Calidad Comprobada<br>___</p>
+					<p class="jcen" style="font-size: 16px;">Los especialistas de Haz Mi Trabajo efectuarán un exhaustivo control de calidad y comprobarán que tu trabajo sea original y cumpla con todos los requisitos.</p>
+				</div>
+
+				<div class="col">
+					<div class="jwcen">
+						<div class="divcircle jcen" style="background-color: #57a">
+							<h1 class="fas fa-mask jicon"></h1>
+						</div>
+					</div>
+					<p class="jcen" style="font-size: 16px;">Privacidad total<br>___</p>
+					<p class="jcen" style="font-size: 16px;">Todo el proceso de trabajo es absolutamente confidencial. No compartimos tus datos con nadie. Para empezar tu pedido con nosotros, solo tienes que darnos un correo electrónico.</p>
+				</div>
+
+				<div class="col">
+					<div class="jwcen">
+						<div class="divcircle jcen" style="background-color: #f72">
+							<h1 class="fas fa-phone-volume jicon"></h1>
+						</div>
+					</div>
+					<p class="jcen" style="font-size: 16px;">Trato personal<br>___</p>
+					<p class="jcen" style="font-size: 16px;">Un gerente personal responderá a todas tus preguntas, contactará rápidamente con el autor y hará los ajustes necesarios para realizar tus trabajos en el plazo y forma adecuados.</p>
+				</div>
+
+				<div class="col">
+					<div class="jwcen">
+						<div class="divcircle jcen" style="background-color: #ac4">
+							<h1 class="fas fa-life-ring jicon"></h1>
+						</div>
+					</div>
+					<p class="jcen" style="font-size: 16px;">Soporte<br>___</p>
+					<p class="jcen" style="font-size: 16px;">Complementamos nuestros servicios ofreciéndote la posibilidad de hacer una consulta a nuestros profesionales en menos de 10 minutos.</p>
+				</div>
+
+				<div class="col">
+					<div class="jwcen">
+						<div class="divcircle jcen" style="background-color: #4c9">
+							<h1 class="fas fa-money-bill-alt jicon"></h1>
+						</div>
+					</div>
+					<p class="jcen" style="font-size: 16px;">Precio<br>___</p>
+					<p class="jcen" style="font-size: 16px;">La gran cantidad de autores expertos con la que contamos, nos da la posibilidad de ofrecer los mejores precios del mercado.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!----------------------------------------------------------------------------------------->
+	<div class="divima jcen" style="background-image: url('https://images.unsplash.com/photo-1505682634904-d7c8d95cdc50?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dmludGFnZSUyMHR5cGV3cml0ZXJ8ZW58MHx8MHx8&w=1000&q=80')">
+		<div style="min-height:50">.</div>
+		<p class="jcen" style="font-size: 32px; color: #eee; margin-bottom: 0;">Comentarios</p>
+		<p class="jcen" style="color: #fa0;font-size: 16px;"><b>_____________________________</b></p>
+		<h1 class="fas fa-user-tie" style="color:#eee"></h1>
+
+		<div class="jwcen">
+			<p class="jcen" style="font-size: 20px;color: #eee;width: 60%;"><i>“Tardaron casi una semana en encontrar a un autor y fue desesperante. Luego ya todo estuvo perfecto porque enviaron el trabajo a tiempo, hicieron unos pocos cambios que me pidió mi profesor y saqué sobresaliente.”</i></p>
+		</div>
+		<p class="jcen" style="font-size: 20px;color: #eee;"><b>Miguel Ángel, 17.01.2022</b></p>
+		<a href="#"><p class="jcen" style="font-size: 20px;color: #eee;">Ver todas las reseñas</p></a>
+	</div>
+	<!----------------------------------------------------------------------------------------->
+	<div>
+		<pre>
+HAZMITRABAJO – Tu página para comprar trabajos académicos
+HazMiTrabajo es una página especializada en hacer trabajos universitarios por dinero. Si estás agobiado porque no tienes tiempo para estudiar y acometer la realización de trabajos universitarios, nosotros te ofrecemos ayuda con los que tengas pendientes. Solo necesitas darnos las instrucciones del trabajo que necesitas y te daremos un presupuesto. Si te parece bien, por fin podrás relajarte con la tranquilidad de que nosotros hacemos tu trabajo académico.
+
+Con nosotros no tienes que preocuparte de buscar quién hace trabajos universitarios y quién consigue realmente buenos resultados. Contamos con expertos en la realización de trabajos universitarios en todas las materias y trabajamos con un enfoque orientado a la calidad que nos permite ofrecerte un servicio personalizado.
+
+Uno de los factores claves de las páginas de ayuda con los trabajos universitarios es que cuenten con autores que realmente puedan ofrecer trabajos de calidad. En nuestro caso, contamos con más de 800 profesionales dispuestos a ayudarte.
+
+¿Cómo realizamos los trabajos universitarios?
+Paso 1. Realiza la solicitud de presupuesto enviándonos la información requerida.
+
+Paso 2. Varios de nuestros profesionales valorarán tu pedido.
+
+Paso 3. Confirma que quieres encargar el trabajo universitario y haz el primer abono.
+
+Paso 4. Revisión de calidad y transferencia del pago completo por el trabajo terminado.
+
+Al encargar trabajos académicos para la universidad con nosotros, te ofrecemos:
+Control de calidad.
+
+Proceso 100% confidencial.
+
+Seguimiento permanente del desarrollo.
+
+Rectificación sin coste alguno.
+
+Pedir presupuesto
+Hacemos trabajos universitarios, desde los menos exigentes, hasta los de mayor dificultad:
+
+TFG
+
+TFM
+
+TFC
+
+Análisis
+
+Comentario de texto
+
+Corrección
+
+Examen online
+
+Estadísticas
+
+Investigación
+
+Resumen
+
+Redacción de texto
+
+Traducción
+
+Tesis doctoral
+
+Proyecto de grado
+
+Proyecto de curso
+
+Presentaciones Power Point, Prezi
+
+Esferas académicas más solicitadas:
+
+Administración de empresas (ADE)
+
+Arquitectura
+
+Biología
+
+Diseño
+
+Educación
+
+Filosofía
+
+Física
+
+Geografía
+
+Historia
+
+Ingeniería Civil
+
+Literatura
+
+Marketing
+
+Matemáticas
+
+Psicología
+
+SPSS
+
+Química
+
+¿Por qué elegir nuestra página para hacer trabajos?
+Si estás buscando páginas para hacer trabajos escolares o universitarios, habrás visto varios anuncios en los que dicen que se hacen trabajos universitarios, pero en los que no tienes ninguna garantía sobre el resultado final.
+
+Encargar trabajos de universidad y recibir un mal producto puede tener efectos catastróficos. No ya por la pérdida de dinero, sino porque probablemente ya no tengas tiempo de pedir los trabajos universitarios o académicos a una empresa que realmente te envíe algo que merezca la pena. De este modo, te quedarás tirado sin un trabajo que poder entregar.
+
+Por ello, es muy importante que selecciones bien a las empresas o personas que hacen los trabajos universitarios. El problema, es que hasta que no ves el trabajo final, es difícil evaluar lo bueno o malo que sería alguien que haga trabajos universitarios.
+
+Con nosotros, tienes la garantía de que ya llevamos más de 2500 trabajos por encargo realizados con éxito. Pero no solo eso, sino que contamos con más de 800 autores expertos en diversos temas y un equipo especializado en asignar cada trabajo al profesional adecuado.
+
+¿Quieres asegurarte una buena nota?
+Te ofrecemos:
+
+Entrega dentro del plazo.
+Cumpliendo los requisitos del trabajo.
+Texto original, sin copia-pegas de ningún tipo.
+Redacción correcta sin errores de ortografía.
+Y todo siguiendo tus instrucciones.
+¿En qué nos diferenciamos de otros servicios de trabajos de universidad por encargo?
+A diferencia de otros sitios donde hacen trabajos universitarios, nuestros autores no son estudiantes como tú, sino que son verdaderos expertos en las materias.
+
+Esto, nos permite ir mucho más allá que un simple trabajo. Por ejemplo, diversas empresas, profesores y profesionales independientes también suelen contar con nosotros cuando necesitan ayudan.
+
+No te la juegues con esos anuncios de hago trabajos universitarios. Cuenta con nosotros y asegúrate una buena nota.
+
+Preguntas frecuentes
+¿Cómo hacer un trabajo universitario?
+Muchos estudiantes no saben realmente cómo hacer trabajos universitarios. ¡Vamos a ayudarte!
+
+Si les preguntas a personas que hagan trabajos universitarios algunos consejos, estos son los que más se repiten:
+
+1. Elige un título adecuado:
+
+Que acote bien el tema del trabajo.
+Que no sea tan ambicioso que sea imposible.
+Que informe de lo que se va a encontrar en el trabajo.
+Que sea sugerente y haga la lectura apetecible.
+2. Ten presente las normas de presentación, citación de bibliografía y forma del trabajo en general desde el primer momento.
+3. Haz una división en apartados lógica.
+4. No te limites a internet, consulta libros y artículos académicos.
+5. Vuelve a leer siempre lo que has escrito.
+
+¿A quién se dirige nuestro servicio?
+Por supuesto, a cualquier estudiante universitario que curse cualquier tipo de estudios, pero también ofrecemos ayuda a profesores, empresarios, estudiantes de postgrado y estudiantes de colegio e instituto.
+
+¿Cuál es el servicio principal de la empresa?
+Puedes pedir trabajos de toda índole: TFG, TFM, tesis, ensayos, proyectos, presentaciones, ejercicios, investigaciones, tareas y mucho más.
+
+También realizamos trabajos para profesionales como: planes empresariales, estudios de mercado, plan de negocios internacionales, etc.
+
+Si lo necesitas, también corregimos, asistimos, buscamos tutores y ofrecemos toda ayuda posible que se le pueda brindar al cliente.
+
+¿Dónde encargar trabajos universitarios online?
+Puedes hacerlo en esta misma página pulsando el botón de arriba que dice “Realizar un pedido”.
+
+Te pediremos algo de información para darte un presupuesto que es el primer paso para realizar tus pedidos de trabajos universitarios online.
+
+¿Qué garantías de calidad tengo al pedir un trabajo universitario con vosotros?
+Al poseer una base de cerca de 800 expertos en la realización de trabajos universitarios en sus respectivas esferas, con más de 5 años de experiencia ayudando a nuestros clientes, puedes estar seguro de que recibirás un trabajo de calidad. Para nosotros no es suficiente con que alguien nos escriba diciendo “hago trabajos universitarios”; queremos recalcar, que ninguno de nuestros autores es estudiante, ya que solo elegimos profesionales de alta gama para que realicen los trabajos universitarios por encargo de nuestros clientes.
+
+¿Qué ventajas tiene comprar trabajos de universidad a HazMiTrabajo?
+Somos los únicos en el mercado que ofrecemos:
+
+Variedad extensa de autores.
+Tiempo récord en entrega de pedidos.
+Trabajos realizados por profesionales.
+Trabajos listos para cualquier revisión antiplagio.
+Asistencia personal de nuestros agentes.
+Precio ajustado por un trabajo realizado por un experto.
+Gracias a todo esto, tenemos la posibilidad de mostrar siempre buenas opiniones de nuestros usuarios.
+
+¿Puedo realizar trabajos en otros idiomas?
+Por supuesto. Igual que realizamos todo tipo de trabajos en español, con nosotros puedes comprar trabajos universitarios, académicos de otro tipo o profesionales en muchos idiomas como: inglés, francés, alemán, italiano, chino, árabe, ruso y muchos más.
+		</pre>
+	</div>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
