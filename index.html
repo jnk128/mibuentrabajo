@@ -6,128 +6,11 @@
 	<title></title>
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-	<style>
-		body{
-			margin: 0;
-		}
-		li{
-			font-size: 13px;
-		}
-		.jmain li{
-			font-size: 16px;
-			padding: 0 8px;
-		}
-		.jfont13{
-			font-size: 13px;
-		}
-		.jsocial{
-			color: #777;
-			padding:0 8px;
-		}
-		.jbtncat{
-			background-color: #fa0;
-			color: #000;
-			padding: 10px;
-			box-shadow: none;
- 			border-radius: 0px;
- 			border:none;
-		}
-		.jbtncat:hover{
-			background-color: #111;
-			color: #eee;
-		}
-		.jbtnneg{
-			background-color: #222;
-			color: #fff;
-			padding: 10px;
-			box-shadow: none;
- 			border-radius: 0px;
- 			border:none;
-		}
-		.jbtnneg:hover{
-			background-color: #eee;
-			color: #111;
-		}
-		.jw100cen{
-		  align-items: center;
-		  display: flex;
-		  justify-content: center;
-		  width: 100vw;
-		}
-		.jwcen{
-		  align-items: center;
-		  display: flex;
-		  flex-direction: column;
-		  justify-content: center;
-		}
-		.jcen{
-		  text-align: center;
-		}
-		.jfff{
-		  color: #fff;
-		}
-		.jflex{
-			display: flex;
-			margin: 0px auto;
-		}
-		.jice{
-			width: 100px;
-		}
-		.divima{
-		  background-repeat: no-repeat;
-    	background-size: cover;
-		}
-		.divcircle{
-			border-radius: 50%;
-			background-color: #222;
-			color: #fff;
-			height: 100px;
-			width: 100px;
-		}
-		.jicon{
-			margin-top: 30%;
-		}
-		.mcm{
-			padding: 0 8px;
-			background-color: #fa0;
-			color: white;
-			margin-right: 16px;
-		}
-		.simple{
-			text-decoration: none;
-			color: black;
-		}
-		.neon{
-			color: #666;
-		}
-		.neon: hover{
-			color: #fd4;
-		}
-		.youf{
-			width: 60%;
-		}
-		.you{
-			height: 0;
-			padding-bottom: 56.25%;
-			position: relative;
-		}
-		.you iframe{
-			position: absolute;
-			top: 0;
-			left: 0;
-			height: 100%;
-			width: 100%;
-		}
-		@media screen and (max-width: 600px){
-			.youf{
-				width: 100%;
-			}
-		}
-	</style>
+	<link rel="stylesheet" type="text/css" href="estilos.css">
 </head>
 <body>
 	<!----------------------------------------------------------------------------------------->
-	<nav class="navbar navbar-expand-lg navbar-light bg-light" style="height:40px">
+	<nav class="topnav navbar navbar-expand-lg navbar-light bg-light" style="height:40px">
 	  <div class="container-fluid" style="background-color:#eee">
 	    <a class="navbar-brand" href="#">
 	    	<img src="">
@@ -236,11 +119,11 @@
 	      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
 	        <li class="nav-item dropdown">
-	          <a class="nav-link active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+	          <a class="nav-link active" href="tarifas.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 	            TARIFAS
 	          </a>
 	          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-	            <li><a class="dropdown-item" href="#">PROMOCIONES</a></li>
+	            <li><a class="dropdown-item" href="promociones.html">PROMOCIONES</a></li>
 	          </ul>
 	        </li>
 
@@ -251,7 +134,7 @@
 	          <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="min-width: 450px;">
 	            <div class="row">
 		            <div class="col">
-			            <li><a class="dropdown-item" href="#">TFG Publicación en revista</a></li>
+			            <li><a class="dropdown-item" href="tfg.html">TFG Publicación en revista</a></li>
 			            <li><a class="dropdown-item" href="#">TFM</a></li>
 			            <li><a class="dropdown-item" href="#">TFE</a></li>
 			            <li><a class="dropdown-item" href="#">PEC</a></li>
@@ -332,8 +215,8 @@
 	  </div>
 		</div>
 	</nav>
-	<!----------------------------------------------------------------------------------------->
-	<div class="divima jcen" style="background-image: url('https://image.freepik.com/free-photo/flat-lay-desktop-with-agendas-keyboard_23-2148397832.jpg')">
+	<!-- *********************************************************************************** -->
+	<header class="divima jcen" style="background-image: url('https://image.freepik.com/free-photo/flat-lay-desktop-with-agendas-keyboard_23-2148397832.jpg')">
 		<h2 class="jcen jfff pt-3">
 			<b>TE AYUDAMOS CON TUS TRABAJOS UNIVERSITARIOS O ACADÉMICOS</b>
 		</h2>
@@ -347,128 +230,130 @@
 		</div>
 		<button class="mb-3 jbtncat">¡HAZ TU PEDIDO AHORA MISMO!</button>
 
-	</div>
+	</header>
 	<!----------------------------------------------------------------------------------------->
-	<div style="min-height:50">.</div>
-	<p class="jcen" style="font-size: 32px; margin-bottom: 0;">Nuestros servicios: Hacemos trabajos académicos</p>
-	<p class="jcen" style="color: #fa0;font-size: 16px;"><b>_____________________________</b></p>
-	<p class="jcen" style="font-size: 16px; margin-bottom: 50px;">Hacemos por ti todo tipo de trabajo académico de cualquier área de conocimiento</p>
-	
-	<div class="jwcen">
-		<div style="width:90vw">
-			
-			<div class="row mb-4">
-				<div class="col">
-					<div class="jwcen">
-					<div class="divcircle jcen">
-						<h1 class="fas fa-book-open jicon" ></h1>
+	<article>
+		<br>
+		<p class="jcen" style="font-size: 32px; margin-bottom: 0;">Nuestros servicios: Hacemos trabajos académicos</p>
+		<p class="jcen" style="color: #fa0;font-size: 16px;"><b>_____________________________</b></p>
+		<p class="jcen" style="font-size: 16px; margin-bottom: 50px;">Hacemos por ti todo tipo de trabajo académico de cualquier área de conocimiento</p>
+		
+		<div class="jwcen">
+			<div style="width:90vw">
+				
+				<div class="row mb-4">
+					<div class="col">
+						<div class="jwcen">
+						<div class="divcircle jcen">
+							<h1 class="fas fa-book-open jicon" ></h1>
+						</div>
+						</div>
+						<p class="jcen" style="font-size: 24px;">Trabajo de fin de grado (TFG)</p>
+						<p  style="font-size: 16x;"><i class="fas fa-check" style="padding-right: 12px;"></i>Plazo mínimo: 7-8 días</p>
+						<p  style="font-size: 16x;"><i class="fas fa-check" style="padding-right: 12px;"></i>Precio: desde 8 EUR por página</p>
 					</div>
+
+					<div class="col">
+						<div class="jwcen">
+						<div class="divcircle jcen">
+							<h1 class="fas fa-clipboard-check jicon" ></h1>
+						</div>
+						</div>
+						<p class="jcen" style="font-size: 24px;">Trabajo de fin de master (TFM)</p>
+						<p  style="font-size: 16x;"><i class="fas fa-check" style="padding-right: 12px;"></i>Plazo mínimo: 7-8 días</p>
+						<p  style="font-size: 16x;"><i class="fas fa-check" style="padding-right: 12px;"></i>Precio: desde 8 EUR por página</p>
 					</div>
-					<p class="jcen" style="font-size: 24px;">Trabajo de fin de grado (TFG)</p>
-					<p  style="font-size: 16x;"><i class="fas fa-check" style="padding-right: 12px;"></i>Plazo mínimo: 7-8 días</p>
-					<p  style="font-size: 16x;"><i class="fas fa-check" style="padding-right: 12px;"></i>Precio: desde 8 EUR por página</p>
+
+					<div class="col">
+						<div class="jwcen">
+						<div class="divcircle jcen">
+							<h1 class="fas fa-eye jicon" ></h1>
+						</div>
+						</div>
+						<p class="jcen" style="font-size: 24px;">Redacción de textos (resúmenes)</p>
+						<p  style="font-size: 16x;"><i class="fas fa-check" style="padding-right: 12px;"></i>Plazo mínimo: 7-8 días</p>
+						<p  style="font-size: 16x;"><i class="fas fa-check" style="padding-right: 12px;"></i>Precio: desde 8 EUR por página</p>
+					</div>
 				</div>
 
-				<div class="col">
-					<div class="jwcen">
-					<div class="divcircle jcen">
-						<h1 class="fas fa-clipboard-check jicon" ></h1>
+				<div class="row mb-4">
+					<div class="col">
+						<div class="jwcen">
+						<div class="divcircle jcen">
+							<h1 class="fas fa-chalkboard-teacher jicon" ></h1>
+						</div>
+						</div>
+						<p class="jcen" style="font-size: 24px;">Tesis doctoral</p>
+						<p  style="font-size: 16x;"><i class="fas fa-check" style="padding-right: 12px;"></i>Plazo mínimo: 7-8 días</p>
+						<p  style="font-size: 16x;"><i class="fas fa-check" style="padding-right: 12px;"></i>Precio: desde 8 EUR por página</p>
 					</div>
+
+					<div class="col">
+						<div class="jwcen">
+						<div class="divcircle jcen">
+							<h1 class="fas fa-file-powerpoint fa-plug jicon" ></h1>
+						</div>
+						</div>
+						<p class="jcen" style="font-size: 24px;">Presentación</p>
+						<p  style="font-size: 16x;"><i class="fas fa-check" style="padding-right: 12px;"></i>Plazo mínimo: 7-8 días</p>
+						<p  style="font-size: 16x;"><i class="fas fa-check" style="padding-right: 12px;"></i>Precio: desde 8 EUR por página</p>
 					</div>
-					<p class="jcen" style="font-size: 24px;">Trabajo de fin de master (TFM)</p>
-					<p  style="font-size: 16x;"><i class="fas fa-check" style="padding-right: 12px;"></i>Plazo mínimo: 7-8 días</p>
-					<p  style="font-size: 16x;"><i class="fas fa-check" style="padding-right: 12px;"></i>Precio: desde 8 EUR por página</p>
+
+					<div class="col">
+						<div class="jwcen">
+						<div class="divcircle jcen">
+							<h1 class="fas fa-book-open jicon" ></h1>
+						</div>
+						</div>
+						<p class="jcen" style="font-size: 24px;">Traducción</p>
+						<p  style="font-size: 16x;"><i class="fas fa-check" style="padding-right: 12px;"></i>Plazo mínimo: 7-8 días</p>
+						<p  style="font-size: 16x;"><i class="fas fa-check" style="padding-right: 12px;"></i>Precio: desde 8 EUR por página</p>
+					</div>
 				</div>
 
-				<div class="col">
-					<div class="jwcen">
-					<div class="divcircle jcen">
-						<h1 class="fas fa-eye jicon" ></h1>
+				<div class="row mb-4">
+					<div class="col">
+						<div class="jwcen">
+						<div class="divcircle jcen">
+							<h1 class="fas fa-file-invoice-dollar jicon" ></h1>
+						</div>
+						</div>
+						<p class="jcen" style="font-size: 24px;">Proyecto de empresa</p>
+						<p  style="font-size: 16x;"><i class="fas fa-check" style="padding-right: 12px;"></i>Plazo mínimo: 7-8 días</p>
+						<p  style="font-size: 16x;"><i class="fas fa-check" style="padding-right: 12px;"></i>Precio: desde 8 EUR por página</p>
 					</div>
-					</div>
-					<p class="jcen" style="font-size: 24px;">Redacción de textos (resúmenes)</p>
-					<p  style="font-size: 16x;"><i class="fas fa-check" style="padding-right: 12px;"></i>Plazo mínimo: 7-8 días</p>
-					<p  style="font-size: 16x;"><i class="fas fa-check" style="padding-right: 12px;"></i>Precio: desde 8 EUR por página</p>
-				</div>
-			</div>
 
-			<div class="row mb-4">
-				<div class="col">
-					<div class="jwcen">
-					<div class="divcircle jcen">
-						<h1 class="fas fa-chalkboard-teacher jicon" ></h1>
+					<div class="col">
+						<div class="jwcen">
+						<div class="divcircle jcen">
+							<h1 class="fas fa-address-card jicon" ></h1>
+						</div>
+						</div>
+						<p class="jcen" style="font-size: 24px;">Resumen</p>
+						<p  style="font-size: 16x;"><i class="fas fa-check" style="padding-right: 12px;"></i>Plazo mínimo: 7-8 días</p>
+						<p  style="font-size: 16x;"><i class="fas fa-check" style="padding-right: 12px;"></i>Precio: desde 8 EUR por página</p>
 					</div>
-					</div>
-					<p class="jcen" style="font-size: 24px;">Tesis doctoral</p>
-					<p  style="font-size: 16x;"><i class="fas fa-check" style="padding-right: 12px;"></i>Plazo mínimo: 7-8 días</p>
-					<p  style="font-size: 16x;"><i class="fas fa-check" style="padding-right: 12px;"></i>Precio: desde 8 EUR por página</p>
-				</div>
 
-				<div class="col">
-					<div class="jwcen">
-					<div class="divcircle jcen">
-						<h1 class="fas fa-file-powerpoint fa-plug jicon" ></h1>
+					<div class="col">
+						<div class="jwcen">
+						<div class="divcircle jcen">
+							<h1 class="fas fa-search jicon" ></h1>
+						</div>
+						</div>
+						<p class="jcen" style="font-size: 24px;">Investigación</p>
+						<p  style="font-size: 16x;"><i class="fas fa-check" style="padding-right: 12px;"></i>Plazo mínimo: 7-8 días</p>
+						<p  style="font-size: 16x;"><i class="fas fa-check" style="padding-right: 12px;"></i>Precio: desde 8 EUR por página</p>
 					</div>
-					</div>
-					<p class="jcen" style="font-size: 24px;">Presentación</p>
-					<p  style="font-size: 16x;"><i class="fas fa-check" style="padding-right: 12px;"></i>Plazo mínimo: 7-8 días</p>
-					<p  style="font-size: 16x;"><i class="fas fa-check" style="padding-right: 12px;"></i>Precio: desde 8 EUR por página</p>
-				</div>
-
-				<div class="col">
-					<div class="jwcen">
-					<div class="divcircle jcen">
-						<h1 class="fas fa-book-open jicon" ></h1>
-					</div>
-					</div>
-					<p class="jcen" style="font-size: 24px;">Traducción</p>
-					<p  style="font-size: 16x;"><i class="fas fa-check" style="padding-right: 12px;"></i>Plazo mínimo: 7-8 días</p>
-					<p  style="font-size: 16x;"><i class="fas fa-check" style="padding-right: 12px;"></i>Precio: desde 8 EUR por página</p>
-				</div>
-			</div>
-
-			<div class="row mb-4">
-				<div class="col">
-					<div class="jwcen">
-					<div class="divcircle jcen">
-						<h1 class="fas fa-file-invoice-dollar jicon" ></h1>
-					</div>
-					</div>
-					<p class="jcen" style="font-size: 24px;">Proyecto de empresa</p>
-					<p  style="font-size: 16x;"><i class="fas fa-check" style="padding-right: 12px;"></i>Plazo mínimo: 7-8 días</p>
-					<p  style="font-size: 16x;"><i class="fas fa-check" style="padding-right: 12px;"></i>Precio: desde 8 EUR por página</p>
-				</div>
-
-				<div class="col">
-					<div class="jwcen">
-					<div class="divcircle jcen">
-						<h1 class="fas fa-address-card jicon" ></h1>
-					</div>
-					</div>
-					<p class="jcen" style="font-size: 24px;">Resumen</p>
-					<p  style="font-size: 16x;"><i class="fas fa-check" style="padding-right: 12px;"></i>Plazo mínimo: 7-8 días</p>
-					<p  style="font-size: 16x;"><i class="fas fa-check" style="padding-right: 12px;"></i>Precio: desde 8 EUR por página</p>
-				</div>
-
-				<div class="col">
-					<div class="jwcen">
-					<div class="divcircle jcen">
-						<h1 class="fas fa-search jicon" ></h1>
-					</div>
-					</div>
-					<p class="jcen" style="font-size: 24px;">Investigación</p>
-					<p  style="font-size: 16x;"><i class="fas fa-check" style="padding-right: 12px;"></i>Plazo mínimo: 7-8 días</p>
-					<p  style="font-size: 16x;"><i class="fas fa-check" style="padding-right: 12px;"></i>Precio: desde 8 EUR por página</p>
 				</div>
 			</div>
 		</div>
-	</div>
 
-	<div class="jcen">
-		<button class="mb-3 jbtnneg">TODOS LOS TIPOS Y TARIFAS DE TRABAJO</button>
-	</div>
+		<div class="jcen">
+			<button class="mb-3 jbtnneg">TODOS LOS TIPOS Y TARIFAS DE TRABAJO</button>
+		</div>
+	</article>
 	<!----------------------------------------------------------------------------------------->
-	<div class="divima jcen" style="background-image: url('https://images.unsplash.com/photo-1505682634904-d7c8d95cdc50?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dmludGFnZSUyMHR5cGV3cml0ZXJ8ZW58MHx8MHx8&w=1000&q=80')">
+	<article class="divima jcen" style="background-image: url('https://images.unsplash.com/photo-1505682634904-d7c8d95cdc50?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dmludGFnZSUyMHR5cGV3cml0ZXJ8ZW58MHx8MHx8&w=1000&q=80')">
 		<p class="jcen pt-4" style="font-size: 36px; color: #fff">Estadísticas de nuestro servicio</p>
 
 		<div class="jwcen">
@@ -509,126 +394,130 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</article>
 	<!----------------------------------------------------------------------------------------->
-	<div style="min-height:50">.</div>
-	<p class="jcen" style="font-size: 32px; margin-bottom: 0;">¿Cómo funciona?</p>
-	<p class="jcen" style="color: #fa0;font-size: 16px;"><b>_____________________________</b></p>
-	<div class="jwcen">
-		<div style="width:90vw">
-			
-			<div class="row mb-4">
-				<div class="col">
-					<div class="jwcen">
-						<div class="divcircle jcen">
-							<h1 class="fas fa-clipboard-list jicon" ></h1>
+	<article>
+		<br>
+		<p class="jcen" style="font-size: 32px; margin-bottom: 0;">¿Cómo funciona?</p>
+		<p class="jcen" style="color: #fa0;font-size: 16px;"><b>_____________________________</b></p>
+		<div class="jwcen">
+			<div style="width:90vw">
+				
+				<div class="row mb-4">
+					<div class="col">
+						<div class="jwcen">
+							<div class="divcircle jcen">
+								<h1 class="fas fa-clipboard-list jicon" ></h1>
+							</div>
 						</div>
+						<p class="jcen" style="font-size: 16px;">Paso 1</p>
+						<p class="jcen" style="font-size: 16px;">Rellena el formulario para pedir un presupuesto</p>
 					</div>
-					<p class="jcen" style="font-size: 16px;">Paso 1</p>
-					<p class="jcen" style="font-size: 16px;">Rellena el formulario para pedir un presupuesto</p>
-				</div>
 
-				<div class="col">
-					<div class="jwcen">
-						<div class="divcircle jcen">
-							<h1 class="fas fa-dollar-sign jicon" ></h1>
+					<div class="col">
+						<div class="jwcen">
+							<div class="divcircle jcen">
+								<h1 class="fas fa-dollar-sign jicon" ></h1>
+							</div>
 						</div>
+						<p class="jcen" style="font-size: 16px;">Paso 2</p>
+						<p class="jcen" style="font-size: 16px;">Te informamos del presupuesto y proceso de elaboración</p>
 					</div>
-					<p class="jcen" style="font-size: 16px;">Paso 2</p>
-					<p class="jcen" style="font-size: 16px;">Te informamos del presupuesto y proceso de elaboración</p>
-				</div>
 
-				<div class="col">
-					<div class="jwcen">
-						<div class="divcircle jcen">
-							<h1 class="fas fa-handshake jicon" ></h1>
+					<div class="col">
+						<div class="jwcen">
+							<div class="divcircle jcen">
+								<h1 class="fas fa-handshake jicon" ></h1>
+							</div>
 						</div>
+						<p class="jcen" style="font-size: 16px;">Paso 3</p>
+						<p class="jcen" style="font-size: 16px;">Haces el primer abono y comenzamos el trabajo</p>
 					</div>
-					<p class="jcen" style="font-size: 16px;">Paso 3</p>
-					<p class="jcen" style="font-size: 16px;">Haces el primer abono y comenzamos el trabajo</p>
-				</div>
 
-				<div class="col">
-					<div class="jwcen">
-						<div class="divcircle jcen">
-							<h1 class="fas fa-paper-plane jicon" ></h1>
+					<div class="col">
+						<div class="jwcen">
+							<div class="divcircle jcen">
+								<h1 class="fas fa-paper-plane jicon" ></h1>
+							</div>
 						</div>
+						<p class="jcen" style="font-size: 16px;">Paso 4</p>
+						<p class="jcen" style="font-size: 16px;">Nos pagas la cantidad pendiente del precio total y te entregamos el trabajo final.</p>
 					</div>
-					<p class="jcen" style="font-size: 16px;">Paso 4</p>
-					<p class="jcen" style="font-size: 16px;">Nos pagas la cantidad pendiente del precio total y te entregamos el trabajo final.</p>
-				</div>
 
+				</div>
 			</div>
 		</div>
-	</div>
+	</article>
 	<!----------------------------------------------------------------------------------------->
-	<div class="jcen" style="background-color:#fd4">
+	<article class="jcen" style="background-color:#fd4">
 		<p class="jcen" style="font-size: 32px; padding-top:45px;">PIDE UN PRESUPUESTO PARA TUS TRABAJOS DE UNIVERSIDAD</p>
 		<button class="mb-3 jbtnneg">¡PEDIR PRESUPUESTO!</button>
-	</div>
+	</article>
 	<!----------------------------------------------------------------------------------------->
-	<div style="min-height:50">.</div>
-	<p class="jcen" style="font-size: 32px; margin-bottom: 0;">¿Por qué elegirnos para hacer tus trabajos?</p>
-	<p class="jcen" style="color: #fa0;font-size: 16px;"><b>_____________________________</b></p>
+	<article>
+		<br>
+		<p class="jcen" style="font-size: 32px; margin-bottom: 0;">¿Por qué elegirnos para hacer tus trabajos?</p>
+		<p class="jcen" style="color: #fa0;font-size: 16px;"><b>_____________________________</b></p>
 
-	<div class="jwcen">
-		<div style="width:90vw">
-			
-			<div class="row mb-4">
-				<div class="col">
-					<div class="jwcen">
-						<div class="divcircle jcen" style="background-color: #5aa">
-							<h1 class="fas fa-crown jicon"></h1>
+		<div class="jwcen">
+			<div style="width:90vw">
+				
+				<div class="row mb-4">
+					<div class="col">
+						<div class="jwcen">
+							<div class="divcircle jcen" style="background-color: #5aa">
+								<h1 class="fas fa-crown jicon"></h1>
+							</div>
 						</div>
+						<p class="jcen" style="font-size: 16px;">Calidad Comprobada<br>___</p>
+						<p class="jcen" style="font-size: 16px;">Los especialistas de Haz Mi Trabajo efectuarán un exhaustivo control de calidad y comprobarán que tu trabajo sea original y cumpla con todos los requisitos.</p>
 					</div>
-					<p class="jcen" style="font-size: 16px;">Calidad Comprobada<br>___</p>
-					<p class="jcen" style="font-size: 16px;">Los especialistas de Haz Mi Trabajo efectuarán un exhaustivo control de calidad y comprobarán que tu trabajo sea original y cumpla con todos los requisitos.</p>
-				</div>
 
-				<div class="col">
-					<div class="jwcen">
-						<div class="divcircle jcen" style="background-color: #57a">
-							<h1 class="fas fa-mask jicon"></h1>
+					<div class="col">
+						<div class="jwcen">
+							<div class="divcircle jcen" style="background-color: #57a">
+								<h1 class="fas fa-mask jicon"></h1>
+							</div>
 						</div>
+						<p class="jcen" style="font-size: 16px;">Privacidad total<br>___</p>
+						<p class="jcen" style="font-size: 16px;">Todo el proceso de trabajo es absolutamente confidencial. No compartimos tus datos con nadie. Para empezar tu pedido con nosotros, solo tienes que darnos un correo electrónico.</p>
 					</div>
-					<p class="jcen" style="font-size: 16px;">Privacidad total<br>___</p>
-					<p class="jcen" style="font-size: 16px;">Todo el proceso de trabajo es absolutamente confidencial. No compartimos tus datos con nadie. Para empezar tu pedido con nosotros, solo tienes que darnos un correo electrónico.</p>
-				</div>
 
-				<div class="col">
-					<div class="jwcen">
-						<div class="divcircle jcen" style="background-color: #f72">
-							<h1 class="fas fa-phone-volume jicon"></h1>
+					<div class="col">
+						<div class="jwcen">
+							<div class="divcircle jcen" style="background-color: #f72">
+								<h1 class="fas fa-phone-volume jicon"></h1>
+							</div>
 						</div>
+						<p class="jcen" style="font-size: 16px;">Trato personal<br>___</p>
+						<p class="jcen" style="font-size: 16px;">Un gerente personal responderá a todas tus preguntas, contactará rápidamente con el autor y hará los ajustes necesarios para realizar tus trabajos en el plazo y forma adecuados.</p>
 					</div>
-					<p class="jcen" style="font-size: 16px;">Trato personal<br>___</p>
-					<p class="jcen" style="font-size: 16px;">Un gerente personal responderá a todas tus preguntas, contactará rápidamente con el autor y hará los ajustes necesarios para realizar tus trabajos en el plazo y forma adecuados.</p>
-				</div>
 
-				<div class="col">
-					<div class="jwcen">
-						<div class="divcircle jcen" style="background-color: #ac4">
-							<h1 class="fas fa-life-ring jicon"></h1>
+					<div class="col">
+						<div class="jwcen">
+							<div class="divcircle jcen" style="background-color: #ac4">
+								<h1 class="fas fa-life-ring jicon"></h1>
+							</div>
 						</div>
+						<p class="jcen" style="font-size: 16px;">Soporte<br>___</p>
+						<p class="jcen" style="font-size: 16px;">Complementamos nuestros servicios ofreciéndote la posibilidad de hacer una consulta a nuestros profesionales en menos de 10 minutos.</p>
 					</div>
-					<p class="jcen" style="font-size: 16px;">Soporte<br>___</p>
-					<p class="jcen" style="font-size: 16px;">Complementamos nuestros servicios ofreciéndote la posibilidad de hacer una consulta a nuestros profesionales en menos de 10 minutos.</p>
-				</div>
 
-				<div class="col">
-					<div class="jwcen">
-						<div class="divcircle jcen" style="background-color: #4c9">
-							<h1 class="fas fa-money-bill-alt jicon"></h1>
+					<div class="col">
+						<div class="jwcen">
+							<div class="divcircle jcen" style="background-color: #4c9">
+								<h1 class="fas fa-money-bill-alt jicon"></h1>
+							</div>
 						</div>
+						<p class="jcen" style="font-size: 16px;">Precio<br>___</p>
+						<p class="jcen" style="font-size: 16px;">La gran cantidad de autores expertos con la que contamos, nos da la posibilidad de ofrecer los mejores precios del mercado.</p>
 					</div>
-					<p class="jcen" style="font-size: 16px;">Precio<br>___</p>
-					<p class="jcen" style="font-size: 16px;">La gran cantidad de autores expertos con la que contamos, nos da la posibilidad de ofrecer los mejores precios del mercado.</p>
 				</div>
 			</div>
 		</div>
-	</div>
+	</article>
 	<!----------------------------------------------------------------------------------------->
-	<div class="divima jcen" style="background-image: url('https://images.unsplash.com/photo-1505682634904-d7c8d95cdc50?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dmludGFnZSUyMHR5cGV3cml0ZXJ8ZW58MHx8MHx8&w=1000&q=80')">
+	<article class="divima jcen" style="background-image: url('https://images.unsplash.com/photo-1505682634904-d7c8d95cdc50?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dmludGFnZSUyMHR5cGV3cml0ZXJ8ZW58MHx8MHx8&w=1000&q=80')">
 		<div style="min-height:50">.</div>
 		<p class="jcen" style="font-size: 32px; color: #eee; margin-bottom: 0;">Comentarios</p>
 		<p class="jcen" style="color: #fa0;font-size: 16px;"><b>_____________________________</b></p>
@@ -639,9 +528,9 @@
 		</div>
 		<p class="jcen" style="font-size: 20px;color: #eee;"><b>Miguel Ángel, 17.01.2022</b></p>
 		<a href="#"><p class="jcen" style="font-size: 20px;color: #eee;">Ver todas las reseñas</p></a>
-	</div>
+	</article>
 	<!----------------------------------------------------------------------------------------->
-	<div class="jwcen">
+	<article class="jwcen">
 		<div class="mb-4" style="width:80vw">
 			<p class="jcen" style="font-size: 32px;">MIBUENTRABAJO – Tu página para comprar trabajos académicos</p>
 			<p>HazMiTrabajo es una página especializada en hacer trabajos universitarios por dinero. Si estás agobiado porque no tienes tiempo para estudiar y acometer la realización de trabajos universitarios, nosotros te ofrecemos ayuda con los que tengas pendientes. Solo necesitas darnos las instrucciones del trabajo que necesitas y te daremos un presupuesto. Si te parece bien, por fin podrás relajarte con la tranquilidad de que nosotros hacemos tu trabajo académico.</p>
@@ -826,109 +715,251 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</article>
 	<!----------------------------------------------------------------------------------------->
-	<div class="jwcen" style="background-color: #666;">
+	<article class="jwcen" style="background-color: #666;">
 		<div class="mb-4" style="width:80vw;">
 			<div class="jcen mt-3" style="background-color:#fd4;">
 				<p class="jcen mb-0" style="font-size: 32px; padding: 16px 0;">¿Necesitas ayuda para pedir un presupuesto?</p>
 			</div>
 			<div class="jcen" style="background-color:#eee;">
 				<p class="jcen" style= "padding-top:30px;">No hay problema, evíanos la información del trabajo y nosotros te ayudamos a estructurarlo</p>
-				<span class="jcen" style= "background-color: #fd4; padding:0 4px; margin-right: 8px;">¿Necesitas más de un trabajo?</span><a href="#">👉 Haz clic aquí</a>
-				<div></div><button class="m-3 jbtncat";>¡PEDIR PRESUPUESTO!</button></div>
+				<span class="jcen" style= "background-color: #fd4; padding:0 4px; margin-right: 8px;">¿Necesitas más de un trabajo?</span><a style="color: black;" href="#">👉 Haz clic aquí</a>
+				<div class="p-4">
+					<form>
+					  <div class="mb-3">
+					    <div class="row mb-2">
+						    <div class="col">
+							    <label for="tipoTrabajo" class="form-label">Tipo de Trabajo *</label>
+							    <select class="form-control" id="tipoTrabajo">
+							    	<option selected disabled value="">---</option>
+							    	<option value="tfg">TFG</option>
+										<option value="tfm">TFM</option>
+										<option value="tfe">TFE</option>
+										<option value="fp">Proyecto fin de ciclo (FP)</option>
+										<option value="td">Tesis doctoral</option>
+										<option value="aa">Actividad Académica</option>
+										<option value="ad">Actividad Didáctica</option>
+										<option value="a">Análisis</option>
+										<option value="cdt">Corrección de texto</option>
+										<option value="d">Disertación</option>
+										<option value="eece">Ejercicio en ciencias exactas</option>
+										<option value="e">Ensayo</option>
+										<option value="spss">Estadística (SPSS)</option>
+										<option value="m">Monografía</option>
+										<option value="i">Investigación</option>
+										<option value="pec">PEC</option>
+										<option value="pu">Prácticas universitarias</option>
+										<option value="p">Presentación</option>
+							    </select>
+				    		</div>
+						    <div class="col">
+							    <label for="asignatura" class="form-label">Asignatura *</label>
+							    <select class="form-control" id="asignatura">
+										<option selected disabled value="">---</option>
+										<option value="ayf">Administración y Finanzas</option>
+										<option value="alg">Algebra</option>
+										<option value="arq">Arquitectura </option>
+										<option value="aud">Audiovisuales</option>
+										<option value="bell">Bellas artes </option>
+										<option value="bio">Biología</option>
+										<option value="calc">Cálculo</option>
+										<option value="com">Comercio </option>
+										<option value="der">Derecho </option>
+										<option value="eco">Economía </option>
+										<option value="edu">Educación </option>
+										<option value="elec">Electrónica </option>
+										<option value="enf">Enfermería </option>
+										<option value="est">Estadística </option>
+										<option value="fil">Filosofía</option>
+										<option value="fis">Física</option>
+										<option value="hist">Historia</option>
+										<option value="ing">Ingeniería</option>
+										<option value="inginfo">Ingeniería informática </option>
+										<option value="ingmec">Ingeniería mecánica </option>
+										<option value="lit">Literatura</option>
+										<option value="log">Logística </option>
+										<option value="mat">Matemáticas</option>
+										<option value="med">Medicina </option>
+										<option value="per">Periodismo </option>
+										<option value="psi">Psicología</option>
+										<option value="seg">Seguridad Industrial </option>
+										<option value="soc">Sociología</option>
+										<option value="tur">Turismo </option>
+										<option value="otros">Otros</option>
+							    </select>
+				    		</div>
+						    <div class="col">
+							    <label for="normas" class="form-label">Normas de estilo</label>
+							    <select class="form-control" id="normas">
+										<option selected disabled value="">---</option>
+										<option value="apa">APA</option>
+										<option value="chicago">Chicago</option>
+										<option value="desarr">Desarrollo</option>
+										<option value="icontec">ICONTEC</option>
+										<option value="iso">ISO</option>
+										<option value="harvard">Harvard</option>
+										<option value="test">Test</option>
+										<option value="vanc">Vancouver</option>
+										<option value="otros">Otros</option>
+										<option value="nohay">No hay normas</option>
+							    </select>
+				    		</div>
+							</div>
+
+							<div class="row mb-2">
+								<div class="col">
+									<label for="tituloTrabajo" class="form-label">Título del trabajo *</label>
+									<textarea class="form-control" id="tituloTrabajo" placeholder="Escriba el tema del trabajo" rows="4"></textarea>
+								</div>
+								<div class="col">
+								  <label for="numeroPaginas" class="form-label">Número de páginas</label>
+								  <input type="text" class="form-control" id="numeroPaginas" placeholder="65">
+								  <label for="fechaEntrega" class="form-label">Fecha de entrega *</label>
+								  <input type="date" class="form-control" id="fechaEntrega" placeholder="">
+								</div>
+							</div>
+
+							<div class="row mb-2">
+								<div class="col">
+									<label for="descripcion" class="form-label">Descripción e indicaciones del trabajo</label>
+									<textarea class="form-control" id="descripcion" placeholder="Añadir una descripción o comentario" rows="4"></textarea>
+								</div>
+								<div class="col">
+								  <label for="subir" class="form-label">Subir un Documento</label>
+								  <input type="file" class="form-control" id="subir">
+								</div>
+							</div>
+
+							<div class="row mb-2">
+								<div class="col">
+									<label for="nombre" class="form-label">Nombre de usuario</label>
+									<input type="text" class="form-control" id="nombre" placeholder="Su nombre">
+								</div>
+								<div class="col">
+									<label for="nombre" class="form-label">Correo electrónico *</label>
+									<input type="email" class="form-control" id="nombre" placeholder="miemail@gmail.com">
+								</div>
+								<div class="col">
+									<label for="telefono" class="form-label">Teléfono *</label>
+									<input type="text" class="form-control" id="telefono" placeholder="">
+								</div>
+								<div class="col">
+									<label for="codigo" class="form-label">Código promocional</label>
+									<input type="text" class="form-control" id="codigo" placeholder="">
+								</div>
+							</div>
+					
+							<div class="row mb-2">
+								<div class="col">
+									<input type="checkbox" id="terminos">
+									<label for="terminos" class="form-label"><i>Al enviar el formulario, declara haber leído y estar de acuerdo, con nuestros <a style="color: black; text-decoration: none;" href="#">Términos y condiciones</a>.</i></label>
+								</div>
+							</div>
+
+							<div class="row mb-2">
+								<div class="col">
+									<button type="submit" class="btn jbtncat">PEDIR PRESUPUESTO</button>
+								</div>
+							</div>
+
+						</div>
+					</form>
+				</div>
 			</div>
 		</div>
-	</div>
+	</article>
 	<!----------------------------------------------------------------------------------------->
-	<div class="jwcen" style="background-color: #222;">
-		<div class="mb-4" style="width:90vw;">
-			<div class="row mt-4">
+	<footer>
+		<div class="jwcen" style="background-color: #222;">
+			<div class="mb-4" style="width:90vw;">
+				<div class="row mt-4">
 
-				<div class="col">
-					<p style="color:#fd4">HAZMITRABAJO - !ESTUDIA FÁCIL!</p>			
-					<p style="color:#666">Somos especialistas en la asistencia académica y profesional. Ofrecemos un servicio único y exclusivo dirigido a ayudar a nuestros clientes y ofrecerles la mejor calidad posible, para facilitarles la vida por haber confiado en nosotros.</p>
-					<button class="m-3 jbtncat";>REALIZAR UN PEDIDO</button>
-				</div>
+					<div class="col">
+						<p style="color:#fd4">HAZMITRABAJO - !ESTUDIA FÁCIL!</p>			
+						<p style="color:#666">Somos especialistas en la asistencia académica y profesional. Ofrecemos un servicio único y exclusivo dirigido a ayudar a nuestros clientes y ofrecerles la mejor calidad posible, para facilitarles la vida por haber confiado en nosotros.</p>
+						<button class="m-3 jbtncat";>REALIZAR UN PEDIDO</button>
+					</div>
 
-				<div class="col">
-					<p style="color:#fd4">TIPOS DE TRABAJO</p>
-					<p class="neon">TFG</p>
-					<p class="neon">TFM</p>
-					<p class="neon">Proyecto Fin de Ciclo (FP)</p>
-					<p class="neon">Tesis doctoral</p>
-					<p class="neon">Resumen</p>
-					<p class="neon">Corrección de textos</p>
-					<p class="neon">Redacción de textos</p>
-					<p class="neon">Tareas y ejercicios</p>
-					<p class="neon">Traducción</p>
-					<p class="neon">Investigación</p>
-					<p class="neon">Presentaciones Power Point, Prezi</p>
-					<p class="neon">Trabajos y exámenes online</p>
-					<p class="neon">Tarifas y tipos de servicio</p>
-				</div>
+					<div class="col">
+						<p style="color:#fd4">TIPOS DE TRABAJO</p>
+						<p class="neon">TFG</p>
+						<p class="neon">TFM</p>
+						<p class="neon">Proyecto Fin de Ciclo (FP)</p>
+						<p class="neon">Tesis doctoral</p>
+						<p class="neon">Resumen</p>
+						<p class="neon">Corrección de textos</p>
+						<p class="neon">Redacción de textos</p>
+						<p class="neon">Tareas y ejercicios</p>
+						<p class="neon">Traducción</p>
+						<p class="neon">Investigación</p>
+						<p class="neon">Presentaciones Power Point, Prezi</p>
+						<p class="neon">Trabajos y exámenes online</p>
+						<p class="neon">Tarifas y tipos de servicio</p>
+					</div>
 
-				<div class="col">
-					<p style="color:#fd4">MATERIAS</p>
-					<p class="neon">ADE</p>
-					<p class="neon">Bellas Artes</p>
-					<p class="neon">Biología</p>
-					<p class="neon">Derecho</p>
-					<p class="neon">Economía</p>
-					<p class="neon">Educación Infantil</p>
-					<p class="neon">Enfermería</p>
-					<p class="neon">Estadística</p>
-					<p class="neon">Física</p>
-					<p class="neon">Ingeniería</p>
-					<p class="neon">Medicina</p>
-					<p class="neon">Psicología</p>
-					<p class="neon">Todas las especialidades</p>
-				</div>
+					<div class="col">
+						<p style="color:#fd4">MATERIAS</p>
+						<p class="neon">ADE</p>
+						<p class="neon">Bellas Artes</p>
+						<p class="neon">Biología</p>
+						<p class="neon">Derecho</p>
+						<p class="neon">Economía</p>
+						<p class="neon">Educación Infantil</p>
+						<p class="neon">Enfermería</p>
+						<p class="neon">Estadística</p>
+						<p class="neon">Física</p>
+						<p class="neon">Ingeniería</p>
+						<p class="neon">Medicina</p>
+						<p class="neon">Psicología</p>
+						<p class="neon">Todas las especialidades</p>
+					</div>
 
-				<div class="col">
-					<p style="color:#fd4">QUIÉNES SOMOS</p>
-					<p class="neon">Empresa</p>
-					<p class="neon">Métodos de pago</p>
-					<p class="neon">Nuestro equipo</p>
-					<p class="neon">Trabajar con nosotros</p>
-					<p class="neon">Trabajar como profesor</p>
-					<p class="neon">Contacto</p>
-					<p class="neon">Comentarios</p>
-					<p class="neon">FAQ</p>
-					<p class="neon">Blog</p>
-					<p class="neon">Aviso legal</p>
-					<p class="neon">Política de privacidad</p>
-					<p class="neon">Política de cookies</p>
-					<p class="neon">Términos y condiciones</p>
-				</div>
+					<div class="col">
+						<p style="color:#fd4">QUIÉNES SOMOS</p>
+						<p class="neon">Empresa</p>
+						<p class="neon">Métodos de pago</p>
+						<p class="neon">Nuestro equipo</p>
+						<p class="neon">Trabajar con nosotros</p>
+						<p class="neon">Trabajar como profesor</p>
+						<p class="neon">Contacto</p>
+						<p class="neon">Comentarios</p>
+						<p class="neon">FAQ</p>
+						<p class="neon">Blog</p>
+						<p class="neon">Aviso legal</p>
+						<p class="neon">Política de privacidad</p>
+						<p class="neon">Política de cookies</p>
+						<p class="neon">Términos y condiciones</p>
+					</div>
 
-				<div class="col">
-					<p style="color:#fd4">CONTACTO</p>
-					<p class="neon"><span class="fab fa-whatsapp m-2" ></span>+51 997339835</p>
-					<p class="neon"><span class="far fa-envelope m-2"></span>catacora.juan@gmail.com</p>
-					<p class="neon"><span class="far fa-clock m-2"></span>Lun - Dom 8:00 - 23:00 </p>
-					<p class="neon"><span class="fab fa-youtube m-2"></span>¿Cómo trabajamos?<span style="background-color:#fd4; font-size: 10px; padding:2px 4px; margin-left: 4px;">VER</span></p>
-					<br>
-					<p class="neon">Redes sociales</p>
-					<hr style="color: #fd4; height: 2px">
-					<p class="neon"><span class="fab fa-facebook m-2"></span>Facebook </p>
-					<p class="neon"><span class="fab fa-instagram m-2"></span>Instagram </p>
-					<p class="neon"><span class="fab fa-youtube m-2"></span>YouTube </p>
-					<p class="neon"><span class="fab fa-twitter m-2"></span>Twitter </p>
-					<span class="fas fa-book-open" ></span>
+					<div class="col">
+						<p style="color:#fd4">CONTACTO</p>
+						<p class="neon"><span class="fab fa-whatsapp m-2" ></span>+51 997339835</p>
+						<p class="neon"><span class="far fa-envelope m-2"></span>catacora.juan@gmail.com</p>
+						<p class="neon"><span class="far fa-clock m-2"></span>Lun - Dom 8:00 - 23:00 </p>
+						<p class="neon"><span class="fab fa-youtube m-2"></span>¿Cómo trabajamos?<span style="background-color:#fd4; font-size: 10px; padding:2px 4px; margin-left: 4px;">VER</span></p>
+						<br>
+						<p class="neon">Redes sociales</p>
+						<hr style="color: #fd4; height: 2px">
+						<p class="neon"><span class="fab fa-facebook m-2"></span>Facebook </p>
+						<p class="neon"><span class="fab fa-instagram m-2"></span>Instagram </p>
+						<p class="neon"><span class="fab fa-youtube m-2"></span>YouTube </p>
+						<p class="neon"><span class="fab fa-twitter m-2"></span>Twitter </p>
+						<span class="fas fa-book-open" ></span>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-	<!----------------------------------------------------------------------------------------->
-	<div class="jcen" style="background-color: #000; padding-bottom: 1px;">
-		<img width="400" src="https://hazmitrabajo.es/wp-content/uploads/2020/10/paymethods2.png">
-		<p style="color:#666">Lee nuestras 111 opiniones</p>
-		<p style="font-size: 12px; color:#666">@ MIBUENTRABAJO - Empresa dirigida a la estricta ayuda académica y profesional.</p>
-	</div>
-	<!----------------------------------------------------------------------------------------->
-
+		<!----------------------------------------------------------------------------------------->
+		<div class="jcen" style="background-color: #000; padding-bottom: 1px;">
+			<img width="400" src="https://hazmitrabajo.es/wp-content/uploads/2020/10/paymethods2.png">
+			<p style="color:#666">Lee nuestras 111 opiniones</p>
+			<p style="font-size: 12px; color:#666">@ MIBUENTRABAJO - Empresa dirigida a la estricta ayuda académica y profesional.</p>
+		</div>
+		<!----------------------------------------------------------------------------------------->
+	</footer>
 <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script type="text/javascript" src="script.js"></script>
 </body>
 </html>
