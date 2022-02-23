@@ -1,0 +1,124 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+li{
+	font-size: 13px;
+}
+.jmain li{
+	font-size: 16px;
+	padding: 0 8px;
+}
+.jfont13{
+	font-size: 13px;
+}
+.jsocial{
+	color: #777;
+	padding:0 8px;
+}
+.jbtncat{
+	background-color: #fa0;
+	color: #000;
+	padding: 10px;
+	box-shadow: none;
+		border-radius: 0px;
+		border:none;
+}
+.jbtncat:hover{
+	background-color: #111;
+	color: #eee;
+}
+.jbtnneg{
+	background-color: #222;
+	color: #fff;
+	padding: 10px;
+	box-shadow: none;
+		border-radius: 0px;
+		border:none;
+}
+.jbtnneg:hover{
+	background-color: #eee;
+	color: #111;
+}
+.jw100cen{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100vw;
+}
+.jwcen{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.jcen{
+  text-align: center;
+}
+.jfff{
+  color: #fff;
+}
+.jflex{
+	display: flex;
+	margin: 0 auto;
+}
+.jice{
+	width: 100px;
+}
+.divima{
+  background-repeat: no-repeat;
+	background-size: cover;
+}
+.divcircle{
+	border-radius: 50%;
+	background-color: #222;
+	color: #fff;
+	height: 100px;
+	width: 100px;
+}
+.jicon{
+	margin-top: 30%;
+}
+.mcm{
+	padding: 0 8px;
+	background-color: #fa0;
+	color: white;
+	margin-right: 16px;
+}
+.simple{
+	text-decoration: none;
+	color: black;
+}
+.neon{
+	color: #666;
+}
+.neon: hover{
+	color: #fd4;
+}
+.youf{
+	width: 60%;
+}
+.you{
+	height: 0;
+	padding-bottom: 56.25%;
+	position: relative;
+}
+.you iframe{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+}
+@media screen and (max-width: 600px){
+	.youf{
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 1024px){
+	.topnav{
+		display: none
+	}
+}
