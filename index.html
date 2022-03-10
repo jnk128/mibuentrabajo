@@ -636,12 +636,12 @@
 				<p class="jcen" style= "padding-top:30px;">No hay problema, evíanos la información del trabajo y nosotros te ayudamos a estructurarlo</p>
 				<span class="jcen" style= "background-color: #fd4; padding:0 4px; margin-right: 8px;">¿Necesitas más de un trabajo?</span><a style="color: black;" href="#">👉 Haz clic aquí</a>
 				<div class="p-4">
-					<form action="https://formsubmit.co/catacora.juan@gmail.com" method="POST">
+					<form action="enviar.php" method="POST">
 					  <div class="mb-3">
 					    <div class="row mb-2">
 						    <div class="col">
 							    <label for="tipoTrabajo" class="form-label">Tipo de Trabajo *</label>
-							    <select class="form-control" id="tipoTrabajo">
+							    <select class="form-control" id="tipoTrabajo" name="tipoTrabajo">
 							    	<option selected disabled value="">---</option>
 							    	<option value="tfg">TFG</option>
 										<option value="tfm">TFM</option>
@@ -665,7 +665,7 @@
 				    		</div>
 						    <div class="col">
 							    <label for="asignatura" class="form-label">Asignatura *</label>
-							    <select class="form-control" id="asignatura">
+							    <select class="form-control" id="asignatura" name="asignatura">
 										<option selected disabled value="">---</option>
 										<option value="ayf">Administración y Finanzas</option>
 										<option value="alg">Algebra</option>
@@ -701,7 +701,7 @@
 				    		</div>
 						    <div class="col">
 							    <label for="normas" class="form-label">Normas de estilo</label>
-							    <select class="form-control" id="normas">
+							    <select class="form-control" id="normas" name="normas">
 										<option selected disabled value="">---</option>
 										<option value="apa">APA</option>
 										<option value="chicago">Chicago</option>
@@ -720,43 +720,43 @@
 							<div class="row mb-2">
 								<div class="col">
 									<label for="tituloTrabajo" class="form-label">Título del trabajo *</label>
-									<textarea class="form-control" id="tituloTrabajo" placeholder="Escriba el tema del trabajo" rows="4"></textarea>
+									<textarea class="form-control" id="tituloTrabajo" name="tituloTrabajo" placeholder="Escriba el tema del trabajo" rows="4"></textarea>
 								</div>
 								<div class="col">
 								  <label for="numeroPaginas" class="form-label">Número de páginas</label>
-								  <input type="text" class="form-control" id="numeroPaginas" placeholder="65">
+								  <input type="text" class="form-control" id="numeroPaginas" name="numeroPaginas" placeholder="65">
 								  <label for="fechaEntrega" class="form-label">Fecha de entrega *</label>
-								  <input type="date" class="form-control" id="fechaEntrega" placeholder="">
+								  <input type="date" class="form-control" id="fechaEntrega" name="fechaEntrega" placeholder="">
 								</div>
 							</div>
 
 							<div class="row mb-2">
 								<div class="col">
 									<label for="descripcion" class="form-label">Descripción e indicaciones del trabajo</label>
-									<textarea class="form-control" id="descripcion" placeholder="Añadir una descripción o comentario" rows="4"></textarea>
+									<textarea class="form-control" id="descripcion" name="descripcion" placeholder="Añadir una descripción o comentario" rows="4"></textarea>
 								</div>
 								<div class="col">
 								  <label for="subir" class="form-label">Subir un Documento</label>
-								  <input type="file" class="form-control" id="subir">
+								  <input type="file" class="form-control" id="subir" name="subir">
 								</div>
 							</div>
 
 							<div class="row mb-2">
 								<div class="col">
 									<label for="nombre" class="form-label">Nombre de usuario</label>
-									<input type="text" class="form-control" id="nombre" placeholder="Su nombre">
+									<input type="text" class="form-control" id="nombre" name="nombre" placeholder="Su nombre">
 								</div>
 								<div class="col">
-									<label for="nombre" class="form-label">Correo electrónico *</label>
-									<input type="email" class="form-control" id="nombre" placeholder="miemail@gmail.com">
+									<label for="email" class="form-label">Correo electrónico *</label>
+									<input type="email" class="form-control" id="email" name="email" placeholder="miemail@gmail.com">
 								</div>
 								<div class="col">
 									<label for="telefono" class="form-label">Teléfono *</label>
-									<input type="text" class="form-control" id="telefono" placeholder="">
+									<input type="text" class="form-control" id="telefono" name="telefono" placeholder="">
 								</div>
 								<div class="col">
 									<label for="codigo" class="form-label">Código promocional</label>
-									<input type="text" class="form-control" id="codigo" placeholder="">
+									<input type="text" class="form-control" id="codigo" name="codigo" placeholder="">
 								</div>
 							</div>
 					
