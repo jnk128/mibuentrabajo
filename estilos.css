@@ -119,6 +119,9 @@ li{
 	height: 100%;
 	width: 100%;
 }
+.pr10{
+	padding-right: 10px;
+}
 @media screen and (max-width: 600px){
 	.youf{
 		width: 100%;
