@@ -36,6 +36,7 @@
 	display: flex;
 	text-align: center;
 	list-style: none;
+	padding: 0;
 }
 .menu_ul li a:hover{
 /*	color: #3d6;
@@ -54,7 +55,7 @@
 	padding: 0 15px;
 }
 .submenu_ul{
-	background-color: #fff;
+	background-color: #f8f8f8;
 	display: none;
 	text-align: center;
 	list-style: none;
@@ -68,6 +69,9 @@
 	color: #555;
 	display: block;
 	padding: 10px 5px;
+}
+.submenu_ul li a:hover{
+	background-color: #eee;
 }
 .submenu_ul li{
 	position: relative;
@@ -114,6 +118,16 @@
 	#btn-menu:checked ~ .div-nav .menu{
 		top: 35px;
 	}
+	.submenu_ul li a{
+		padding: 0px 5px;
+	}
+	.two{
+		style="min-width: 1px;
+	}
+	.menu2 button{
+		font-size: 10px;
+	}
+
 }
 .busqueda{
 	border: 1px solid #3d6;
@@ -128,4 +142,7 @@
 	color: #eee;
 	padding: 10px;
 	border:none;
+}
+.two{
+	style="min-width: 550px;
 }
